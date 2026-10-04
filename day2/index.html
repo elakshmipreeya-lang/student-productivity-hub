@@ -8,30 +8,52 @@
 
 <body>
 
-    <h1>Student Productivity Hub</h1>
+    <main class="app">
 
-    <p>Manage your daily tasks.</p>
+        <header class="app-header">
+            <h1>📚 Student Productivity Hub</h1>
+            <p>Stay organized. Get things done.</p>
+        </header>
 
-    <h2>Add a Task</h2>
 
-    <form id="taskForm">
+        <section class="task-section">
 
-        <input
-            type="text"
-            id="taskInput"
-            placeholder="Enter a task"
-        >
+            <h2>Add a Task</h2>
 
-        <button type="submit">Add Task</button>
+            <form id="taskForm">
 
-    </form>
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="What do you need to do?"
+                >
 
-    <h2>
-        Today's Tasks
-        (<span id="taskCount">0</span>)
-    </h2>
+                <button type="submit">
+                    Add
+                </button>
 
-    <ul id="taskList"></ul>
+            </form>
+
+        </section>
+
+
+        <section class="task-section">
+
+            <div class="task-heading">
+
+                <h2>
+                    Today's Tasks
+                </h2>
+
+                <span id="taskCount">0</span>
+
+            </div>
+
+            <ul id="taskList"></ul>
+
+        </section>
+
+    </main>
 
     <script src="script.js"></script>
 
