@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Student Productivity Hub</title>
     <link rel="stylesheet" href="style.css">
@@ -9,17 +10,31 @@
 
     <h1>Student Productivity Hub</h1>
 
-    <p>Welcome to our productivity app!</p>
+    <p>Manage your daily tasks.</p>
 
-    <h2>Today's Tasks</h2>
+    <h2>Add a Task</h2>
 
-    <ul id="taskList">
-        <li>Learn HTML</li>
-        <li>Practice Git</li>
-        <li>Build a webpage</li>
-    </ul>
+    <form id="taskForm">
 
-    <button id="addTaskButton">Add Task</button>    
+        <input
+            type="text"
+            id="taskInput"
+            placeholder="Enter a task"
+        >
+
+        <button type="submit">Add Task</button>
+
+    </form>
+
+    <h2>
+        Today's Tasks
+        (<span id="taskCount">0</span>)
+    </h2>
+
+    <ul id="taskList"></ul>
+
     <script src="script.js"></script>
+
 </body>
+
 </html>
